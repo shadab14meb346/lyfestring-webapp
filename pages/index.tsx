@@ -1,3 +1,4 @@
+import NavBar from "@components/home-page/navbar";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -7,7 +8,7 @@ const Home: NextPage = () => {
       <Head>
         <title>LifeString</title>
       </Head>
-      <h1>Welcome</h1>
+      <NavBar />
     </>
   );
 };
