@@ -1,0 +1,46 @@
+{
+  "name": "lyfestring-webapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "format": "prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": "prettier --write",
+    "pages/**/*.{js,ts,tsx}": "prettier --write"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "latest",
+    "@mui/styles": "^5.6.0",
+    "@svgr/webpack": "^6.1.2",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "husky": "^4.3.0",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.3.0",
+    "typescript": "latest"
+  }
+}
