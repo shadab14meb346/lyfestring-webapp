@@ -15,6 +15,12 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
+    grey1: {
+      main: "#333333",
+      light: "",
+      dark: "",
+      contrastText: "",
+    },
   },
   typography: {
     fontFamily: fontFamily,
@@ -65,19 +71,13 @@ const theme = createTheme({
       },
     },
     subtitle1: {
-      fontFamily: "Spoof-Medium",
-      fontWeight: 500,
-      fontSize: "18px",
+      fontSize: "16px",
       lineHeight: "24px",
     },
     subtitle2: {
-      fontFamily: "Spoof-Medium",
       fontWeight: 400,
       fontSize: "12px",
       lineHeight: "15px",
-      [defaultTheme.breakpoints.down("sm")]: {
-        fontSize: "11px",
-      },
     },
   },
 
@@ -87,6 +87,13 @@ const theme = createTheme({
         disableRipple: true,
         disableElevation: true,
         disableFocusRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          borderRadius: "28px",
+          textTransform: "none",
+          fontWeight: 600,
+        },
       },
     },
   },
