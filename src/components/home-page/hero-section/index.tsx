@@ -24,7 +24,7 @@ const HeroSection = () => {
         <Button variant="contained">Assess Yourself</Button>
       </div>
       <div className={classes.rhs}>
-        <img src="/wepik-photo-mode-2022820-122833.png" />
+        <img src="/hero-section-image.png" style={{ marginLeft: "100px" }} />
       </div>
     </div>
   );

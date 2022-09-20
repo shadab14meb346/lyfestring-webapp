@@ -25,7 +25,7 @@ export const useStyles = makeStyles({
   },
   lhs: {},
   rhs: {
-    width: "50%",
+    // width: "50%",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
