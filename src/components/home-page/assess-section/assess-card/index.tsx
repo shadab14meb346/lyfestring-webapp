@@ -1,4 +1,5 @@
 import { Button, Typography } from "@mui/material";
+import classNames from "classnames";
 import { CSSProperties } from "react";
 
 import { useStyles } from "./useStyles";
@@ -7,12 +8,20 @@ interface IAssessCardProps {
   title: string;
   backgroundImage: string;
   styles?: CSSProperties;
+  ctaText?: string;
+  className?: string;
 }
-const AssessCard = ({ title, backgroundImage, styles }: IAssessCardProps) => {
+const AssessCard = ({
+  title,
+  backgroundImage,
+  styles,
+  ctaText = "Take Assessment",
+  className = "",
+}: IAssessCardProps) => {
   const classes = useStyles();
   return (
     <div
-      className={classes.main}
+      className={classNames(classes.main, className)}
       style={{
         backgroundImage: `url('/${backgroundImage}')`,
         ...styles,
@@ -22,7 +31,7 @@ const AssessCard = ({ title, backgroundImage, styles }: IAssessCardProps) => {
         {title}
       </Typography>
       <Button variant="contained" className={classes.button}>
-        Take Assessment
+        {ctaText}
       </Button>
     </div>
   );

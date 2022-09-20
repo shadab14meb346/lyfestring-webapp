@@ -7,6 +7,8 @@ export const useStyles = makeStyles({
     height: "312px",
     borderRadius: 10,
     position: "relative",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
   },
   title: {
     maxWidth: 162,
