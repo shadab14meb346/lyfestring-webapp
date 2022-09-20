@@ -22,6 +22,12 @@ const theme = createTheme({
       dark: "",
       contrastText: "",
     },
+    CetaceanBlue: {
+      main: "#090236",
+      light: "",
+      dark: "",
+      contrastText: "",
+    },
   },
   typography: {
     fontFamily: fontFamily,
@@ -47,10 +53,10 @@ const theme = createTheme({
       fontWeight: 600,
       fontSize: "24px",
       lineHeight: "32px",
-      // [defaultTheme.breakpoints.down("sm")]: {
-      // 	fontSize: "24px",
-      // 	lineHeight: "32px",
-      // },
+      [defaultTheme.breakpoints.down("sm")]: {
+        fontSize: "20px",
+        lineHeight: "26px",
+      },
     },
     body1: {
       fontWeight: 400,

@@ -8,7 +8,7 @@ import BrandLogo from "@components/common/brand-logo";
 const NavBar = () => {
   const classes = useStyles();
   return (
-    <AppBar className={classes.main}>
+    <AppBar className={classes.main} position="static">
       <BrandLogo />
       <Box
         className={classNames(classes.alignItemsCenter, classes.navbarItems)}
