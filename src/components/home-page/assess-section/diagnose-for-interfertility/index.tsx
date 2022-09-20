@@ -12,7 +12,7 @@ const DiagnoseForInfertility = () => {
     },
     {
       title: "Female Infertility",
-      image: "female-infertility.png",
+      image: "female-infertility-image.png",
       // backgroundColor: "#F4BDC7",
     },
   ];
