@@ -8,12 +8,4 @@ export const useStyles = makeStyles({
       display: "none",
     },
   },
-  alignItemsCenter: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  navarItem: {
-    marginRight: theme.spacing(4),
-  },
 });

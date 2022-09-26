@@ -6,6 +6,7 @@ import NavBar from "@components/home-page/navbar";
 import AssessBySymptoms from "@components/home-page/assess-section/assess-by-symptoms";
 import DiagnoseForInfertility from "@components/home-page/assess-section/diagnose-for-interfertility";
 import AssessBySTIs from "@components/home-page/assess-section/assess-by-sti";
+import Footer from "@components/home-page/footer";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <AssessBySymptoms />
       <DiagnoseForInfertility />
       <AssessBySTIs />
+      <Footer />
     </>
   );
 };
