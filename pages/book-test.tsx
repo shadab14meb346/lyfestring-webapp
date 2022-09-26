@@ -8,7 +8,7 @@ import DiagnoseForInfertility from "@components/home-page/assess-section/diagnos
 import AssessBySTIs from "@components/home-page/assess-section/assess-by-sti";
 import Footer from "@components/home-page/footer";
 
-const BookTest: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -20,4 +20,4 @@ const BookTest: NextPage = () => {
   );
 };
 
-export default BookTest;
+export default Home;
