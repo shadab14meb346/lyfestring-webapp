@@ -58,24 +58,24 @@ const theme = createTheme({
         lineHeight: "26px",
       },
     },
+    h4: {
+      fontWeight: 600,
+      fontSize: "18px",
+      lineHeight: "26px",
+      [defaultTheme.breakpoints.down("sm")]: {
+        fontSize: "20px",
+        lineHeight: "26px",
+      },
+    },
     body1: {
       fontWeight: 400,
-      fontSize: "16px",
-      lineHeight: "30px",
-      // [defaultTheme.breakpoints.down("sm")]: {
-      // 	fontSize: "18px",
-      // 	lineHeight: "24px",
-      // },
+      fontSize: "14px",
+      lineHeight: "17px",
     },
     body2: {
-      fontFamily: "Spoof-Regular",
-      fontWeight: 500,
-      fontSize: "18px",
-      lineHeight: "24px",
-      [defaultTheme.breakpoints.down("sm")]: {
-        fontSize: "16px",
-        lineHeight: "21px",
-      },
+      fontWeight: 400,
+      fontSize: "12px",
+      lineHeight: "16px",
     },
     subtitle1: {
       fontSize: "16px",

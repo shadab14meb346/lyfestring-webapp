@@ -6,6 +6,7 @@ import NavBar from "@components/home-page/navbar";
 import HowItWorks from "@components/book-test/how-it-works";
 import Footer from "@components/home-page/footer";
 import HighQualityLabsSection from "@components/book-test/high-quality-labs-section";
+import PopularLabTests from "@components/book-test/popular-lab-tests";
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +18,8 @@ const Home: NextPage = () => {
       <HeroSection />
       <HowItWorks />
       <HighQualityLabsSection />
-      {/* <Footer /> */}
+      <PopularLabTests />
+      <Footer />
     </>
   );
 };
