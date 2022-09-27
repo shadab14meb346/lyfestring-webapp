@@ -67,10 +67,15 @@ const theme = createTheme({
         lineHeight: "26px",
       },
     },
+    h5: {
+      fontWeight: 400,
+      fontSize: "16px",
+      lineHeight: "24px",
+    },
     body1: {
       fontWeight: 400,
       fontSize: "14px",
-      lineHeight: "17px",
+      lineHeight: "18px",
     },
     body2: {
       fontWeight: 400,
@@ -78,13 +83,14 @@ const theme = createTheme({
       lineHeight: "16px",
     },
     subtitle1: {
-      fontSize: "16px",
-      lineHeight: "24px",
+      fontSize: "14px",
+      lineHeight: "18px",
+      weight: 500,
     },
     subtitle2: {
-      fontWeight: 400,
+      fontWeight: 500,
       fontSize: "12px",
-      lineHeight: "15px",
+      lineHeight: "16px",
     },
   },
 
