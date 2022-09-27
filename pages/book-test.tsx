@@ -4,9 +4,8 @@ import Head from "next/head";
 import HeroSection from "@components/book-test/hero-section";
 import NavBar from "@components/home-page/navbar";
 import HowItWorks from "@components/book-test/how-it-works";
-import DiagnoseForInfertility from "@components/home-page/assess-section/diagnose-for-interfertility";
-import AssessBySTIs from "@components/home-page/assess-section/assess-by-sti";
 import Footer from "@components/home-page/footer";
+import HighQualityLabsSection from "@components/book-test/high-quality-labs-section";
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +16,8 @@ const Home: NextPage = () => {
       <NavBar />
       <HeroSection />
       <HowItWorks />
+      <HighQualityLabsSection />
+      {/* <Footer /> */}
     </>
   );
 };
