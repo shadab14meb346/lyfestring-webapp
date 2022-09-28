@@ -1,16 +1,30 @@
 import { AppBar, Typography, Box, Button } from "@mui/material";
 import classNames from "classnames";
-import MenuIcon from "@mui/icons-material/Menu";
 import { useRouter } from "next/router";
 
 import { useStyles } from "./useStyles";
 import BrandLogo from "@components/common/brand-logo";
 import Link from "@components/Link";
 import ROUTES from "src/routes";
+import DrawerMenu from "./drawer-menu";
 
 const NavBar = () => {
   const classes = useStyles();
   const router = useRouter();
+  //TODO: we can use the same logic in the drawer
+  const isNavBarItemActive = (href: ROUTES) => {
+    switch (href) {
+      case ROUTES.HOME:
+        return router?.asPath === ROUTES.HOME;
+      case ROUTES.SELF_ASSESSMENT:
+        return router?.asPath === ROUTES.SELF_ASSESSMENT;
+      case ROUTES.BOOK_A_LAB_TEST:
+        return router?.asPath === ROUTES.BOOK_A_LAB_TEST;
+      case ROUTES.UPLOAD_REPORT:
+        return router?.asPath === ROUTES.UPLOAD_REPORT;
+    }
+  };
+
   return (
     <AppBar className={classes.main} position="static">
       <BrandLogo />
@@ -21,7 +35,7 @@ const NavBar = () => {
           href={ROUTES.HOME}
           className={classNames(
             classes.navarItem,
-            router?.asPath === ROUTES.HOME
+            isNavBarItemActive(ROUTES.HOME)
               ? classes.activeNavbarItem
               : classes.inActiveNavbarItem
           )}
@@ -33,7 +47,7 @@ const NavBar = () => {
           href={ROUTES.SELF_ASSESSMENT}
           className={classNames(
             classes.navarItem,
-            router?.asPath === ROUTES.SELF_ASSESSMENT
+            isNavBarItemActive(ROUTES.SELF_ASSESSMENT)
               ? classes.activeNavbarItem
               : classes.inActiveNavbarItem
           )}
@@ -44,7 +58,7 @@ const NavBar = () => {
           href={ROUTES.BOOK_A_LAB_TEST}
           className={classNames(
             classes.navarItem,
-            router?.asPath === ROUTES.BOOK_A_LAB_TEST
+            isNavBarItemActive(ROUTES.BOOK_A_LAB_TEST)
               ? classes.activeNavbarItem
               : classes.inActiveNavbarItem
           )}
@@ -55,7 +69,7 @@ const NavBar = () => {
           href={ROUTES.UPLOAD_REPORT}
           className={classNames(
             classes.navarItem,
-            router?.asPath === ROUTES.UPLOAD_REPORT
+            isNavBarItemActive(ROUTES.UPLOAD_REPORT)
               ? classes.activeNavbarItem
               : classes.inActiveNavbarItem
           )}
@@ -76,7 +90,7 @@ const NavBar = () => {
           Sign In
         </Button>
       </Box>
-      <MenuIcon className={classes.menuIcon} fontSize="large" />
+      <DrawerMenu />
     </AppBar>
   );
 };
