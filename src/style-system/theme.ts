@@ -35,19 +35,19 @@ const theme = createTheme({
       fontWeight: 600,
       fontSize: "48px",
       lineHeight: "58px",
-      // [defaultTheme.breakpoints.down("sm")]: {
-      // 	fontSize: "34px",
-      // 	lineHeight: "39px",
-      // },
+      [defaultTheme.breakpoints.down("sm")]: {
+        fontSize: "34px",
+        lineHeight: "39px",
+      },
     },
     h2: {
       fontWeight: 600,
       fontSize: "32px",
       lineHeight: "42px",
-      // [defaultTheme.breakpoints.down("sm")]: {
-      // 	fontSize: "28px",
-      // 	lineHeight: "32px",
-      // },
+      [defaultTheme.breakpoints.down("sm")]: {
+        fontSize: "28px",
+        lineHeight: "32px",
+      },
     },
     h3: {
       fontWeight: 600,

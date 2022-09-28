@@ -3,15 +3,18 @@ import theme from "src/style-system/theme";
 
 export const useStyles = makeStyles({
   main: {
-    paddingTop: theme.spacing(12.5),
-    paddingBottom: theme.spacing(12.5),
-    paddingLeft: theme.spacing(18.75),
-    paddingRight: theme.spacing(18.75),
+    padding: theme.spacing(12.5, 18.75),
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(6, 2),
+    },
   },
   content: {
     marginTop: theme.spacing(5),
     display: "flex",
     justifyContent: "space-between",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
   },
   item: {
     width: 360,
@@ -19,6 +22,10 @@ export const useStyles = makeStyles({
     padding: theme.spacing(2.5),
     position: "relative",
     borderRadius: 10,
+    [theme.breakpoints.down("sm")]: {
+      width: 330,
+      marginBottom: theme.spacing(2.5),
+    },
   },
   inner: {
     width: "100%",
@@ -37,6 +44,18 @@ export const useStyles = makeStyles({
     top: -10,
     left: -20,
     zIndex: 1,
+    [theme.breakpoints.down("sm")]: {
+      // width: 330,
+      maxWidth: 30,
+      height: "auto",
+      left: 0,
+    },
+  },
+  step1Img: {
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 20,
+      height: "auto",
+    },
   },
   box: {
     height: "100px",
@@ -53,5 +72,9 @@ export const useStyles = makeStyles({
   },
   mt2: {
     marginTop: theme.spacing(2),
+  },
+  stepIcon: {
+    width: 100,
+    height: "auto",
   },
 });

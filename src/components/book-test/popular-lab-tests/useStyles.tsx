@@ -7,6 +7,9 @@ export const useStyles = makeStyles({
     paddingBottom: theme.spacing(12.5),
     paddingLeft: theme.spacing(18.75),
     paddingRight: theme.spacing(18.75),
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(6, 2),
+    },
   },
   cards: {
     marginTop: theme.spacing(5),

@@ -15,12 +15,17 @@ export const useStyles = makeStyles({
     [theme.breakpoints.down("sm")]: {
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
+      flexDirection: "column",
+      height: "250px",
     },
   },
   lhs: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "flex-start",
+    },
   },
   rhs: {
     [theme.breakpoints.down("sm")]: {
@@ -28,7 +33,7 @@ export const useStyles = makeStyles({
     },
   },
   heroTextSection: {
-    maxWidth: 342,
+    // maxWidth: 342,
     margin: theme.spacing(4, 0, 4, 0),
     display: "flex",
     position: "relative",
@@ -36,6 +41,9 @@ export const useStyles = makeStyles({
   cta: {
     paddingRight: theme.spacing(6),
     paddingLeft: theme.spacing(6),
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
   },
   watchLogo: {
     width: 82,

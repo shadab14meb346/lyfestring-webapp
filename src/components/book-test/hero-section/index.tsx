@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
           </div>
           <Button variant="contained" className={classes.cta}>
-            Book Test
+            Book A Lab Test
           </Button>
         </div>
       </div>

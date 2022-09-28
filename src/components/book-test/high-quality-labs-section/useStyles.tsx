@@ -8,6 +8,9 @@ export const useStyles = makeStyles({
     paddingLeft: theme.spacing(18.75),
     paddingRight: theme.spacing(18.75),
     backgroundColor: theme.palette.primary.contrastText,
+    [theme.breakpoints.down("sm")]: {
+      padding: theme.spacing(6, 2),
+    },
   },
   accredited: {
     display: "flex",
@@ -17,8 +20,54 @@ export const useStyles = makeStyles({
     marginTop: theme.spacing(4),
     maxWidth: 300,
     backgroundColor: "#fff",
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "100%",
+    },
   },
   bold: {
     fontWeight: 600,
+  },
+  title: {
+    display: "flex",
+    marginBottom: 2,
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      alignItems: "center",
+      marginBottom: theme.spacing(2),
+      "& img": {
+        width: 34,
+        height: "auto",
+        marginBottom: theme.spacing(2),
+      },
+    },
+  },
+  img1: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+  },
+  img2: {
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "100%",
+      height: "auto",
+    },
+  },
+  secondLineOfLabImages: {
+    display: "flex",
+    gap: theme.spacing(4),
+    marginTop: theme.spacing(4),
+    [theme.breakpoints.down("sm")]: {
+      gap: theme.spacing(2),
+      marginTop: theme.spacing(2),
+      "& img": {
+        maxWidth: 150,
+        height: "auto",
+      },
+    },
+  },
+  img5: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
   },
 });

@@ -17,7 +17,7 @@ const HighQualityLabsSection = () => {
           flexDirection="column"
           justifyContent="center"
         >
-          <Box display="flex" marginBottom={2}>
+          <Box className={classes.title}>
             <img src="/shield-icon.svg" />
             <Typography variant="h2" color="grey1.main" textAlign="center">
               High Quality Labs
@@ -42,13 +42,23 @@ const HighQualityLabsSection = () => {
         </Grid>
         <Grid item xs={12} lg={8}>
           <Box display="flex" gap={4}>
-            <img src="/high-quality-lab-section-image-1.png" />
-            <img src="/high-quality-lab-section-image-2.png" />
+            <img
+              src="/high-quality-lab-section-image-1.png"
+              className={classes.img1}
+            />
+            <img
+              src="/high-quality-lab-section-image-2.png"
+              className={classes.img2}
+            />
           </Box>
-          <Box display="flex" gap={4} marginTop={4}>
+          <Box className={classes.secondLineOfLabImages}>
             <img src="/high-quality-lab-section-image-3.png" />
             <img src="/high-quality-lab-section-image-4.png" />
-            <img src="/high-quality-lab-section-image-5.png" />
+
+            <img
+              src="/high-quality-lab-section-image-5.png"
+              className={classes.img5}
+            />
           </Box>
         </Grid>
       </Grid>

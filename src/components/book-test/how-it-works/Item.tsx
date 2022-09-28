@@ -1,4 +1,6 @@
 import { Typography } from "@mui/material";
+import classNames from "classnames";
+import Image from "next/image";
 
 import { useStyles } from "./useStyles";
 
@@ -12,15 +14,15 @@ const Item = ({ title, step, description, backgroundColor }: IItemProp) => {
   const classes = useStyles();
   return (
     <div className={classes.item} style={{ backgroundColor }}>
-      <img src={`${step}.png`} className={classes.stepImg} />
+      <img
+        src={`${step}.png`}
+        className={classNames(
+          classes.stepImg,
+          step === 1 ? classes.step1Img : ""
+        )}
+      />
       <div className={classes.inner}>
-        <img
-          src={`/step-${step}-icon.png`}
-          style={{
-            width: 100,
-            height: 100,
-          }}
-        />
+        <img src={`/step-${step}-icon.png`} className={classes.stepIcon} />
         <div className={classes.stepContent}>
           <Typography variant="h3">{title}</Typography>
           <Typography
