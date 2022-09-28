@@ -6,17 +6,30 @@ export const useStyles = makeStyles({
     width: "360px",
     height: "312px",
     borderRadius: 10,
-    position: "relative",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    padding: theme.spacing(2),
+    [theme.breakpoints.down("sm")]: {
+      width: "160px",
+      height: "160px",
+      flexShrink: 0,
+      alignItems: "flex-start",
+      padding: theme.spacing(1),
+    },
   },
   title: {
     maxWidth: 162,
-    padding: theme.spacing(4),
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 100,
+    },
   },
   button: {
-    marginLeft: theme.spacing(4),
-    position: "absolute",
-    bottom: theme.spacing(4),
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
   },
 });

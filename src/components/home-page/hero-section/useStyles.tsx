@@ -14,6 +14,7 @@ export const useStyles = makeStyles({
     [theme.breakpoints.down("sm")]: {
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
+      height: "500px",
     },
   },
   textWrapper: {

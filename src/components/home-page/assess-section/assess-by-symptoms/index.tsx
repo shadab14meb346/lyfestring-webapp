@@ -33,6 +33,7 @@ const AssessBySymptoms = () => {
               styles={{
                 backgroundColor,
               }}
+              ctaText="Assess me"
             />
           );
         })}
