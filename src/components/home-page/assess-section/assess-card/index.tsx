@@ -1,6 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import classNames from "classnames";
 import { CSSProperties } from "react";
+import ROUTES from "src/routes";
 
 import { useStyles } from "./useStyles";
 
@@ -10,6 +11,7 @@ interface IAssessCardProps {
   styles?: CSSProperties;
   ctaText?: string;
   className?: string;
+  ctaRoute: string;
 }
 const AssessCard = ({
   title,
@@ -17,6 +19,7 @@ const AssessCard = ({
   styles,
   ctaText = "Take Assessment",
   className = "",
+  ctaRoute,
 }: IAssessCardProps) => {
   const classes = useStyles();
   return (
@@ -30,7 +33,7 @@ const AssessCard = ({
       <Typography variant="h3" className={classes.title} color="grey1.main">
         {title}
       </Typography>
-      <Button variant="contained" className={classes.button}>
+      <Button variant="contained" className={classes.button} href={ctaRoute}>
         {ctaText}
       </Button>
     </div>

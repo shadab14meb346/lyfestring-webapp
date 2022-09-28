@@ -1,4 +1,5 @@
 import { Button, Typography } from "@mui/material";
+import ROUTES from "src/routes";
 
 import { useStyles } from "./useStyles";
 
@@ -21,7 +22,9 @@ const HeroSection = () => {
             growth & hair loss
           </Typography>
         </div>
-        <Button variant="contained">Assess Yourself</Button>
+        <Button variant="contained" href={ROUTES.SELF_ASSESSMENT}>
+          Assess Yourself
+        </Button>
       </div>
       <div className={classes.rhs}>
         <img src="/hero-section-image.png" style={{ marginLeft: "100px" }} />

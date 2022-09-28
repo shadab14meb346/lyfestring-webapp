@@ -1,3 +1,4 @@
+import ROUTES from "src/routes";
 import AssessSection from "..";
 import AssessCard from "../assess-card";
 
@@ -8,32 +9,33 @@ const AssessBySymptoms = () => {
   const assessBySymptomsData = [
     {
       title: "Irregular Menstrual Cycle",
-      image: "assess-by-irregular-menstrual-cycle.png",
+      backgroundImage: "assess-by-irregular-menstrual-cycle.png",
+      ctaRoute: ROUTES.SELF_ASSESSMENT,
     },
     {
       title: "Excessive Hair Growth",
-      image: "assess-by-excessive-hair-growth.png",
+      backgroundImage: "assess-by-excessive-hair-growth.png",
       backgroundColor: "#F4BDC7",
+      ctaRoute: ROUTES.SELF_ASSESSMENT,
     },
     {
       title: "Anxiety & Depression",
-      image: "assess-by-depression-&-anxiety.png",
+      backgroundImage: "assess-by-depression-&-anxiety.png",
       backgroundColor: "#D5C8E9",
+      ctaRoute: ROUTES.SELF_ASSESSMENT,
     },
   ];
   return (
     <>
       <AssessSection title="Assess by symptoms">
-        {assessBySymptomsData.map(({ title, image, backgroundColor }) => {
+        {assessBySymptomsData.map((item) => {
           return (
             <AssessCard
-              key={title}
-              title={title}
-              backgroundImage={image}
+              key={item.title}
+              {...item}
               styles={{
-                backgroundColor,
+                backgroundColor: item.backgroundColor,
               }}
-              ctaText="Assess me"
             />
           );
         })}

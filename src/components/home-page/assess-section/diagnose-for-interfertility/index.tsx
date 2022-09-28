@@ -1,3 +1,4 @@
+import ROUTES from "src/routes";
 import AssessSection from "..";
 import AssessCard from "../assess-card";
 
@@ -9,11 +10,13 @@ const DiagnoseForInfertility = () => {
     {
       title: "Male Infertility",
       image: "male-infertility.png",
+      ctaRoute: ROUTES.BOOK_A_LAB_TEST,
     },
     {
       title: "Female Infertility",
       image: "female-infertility-image.png",
       // backgroundColor: "#F4BDC7",
+      ctaRoute: ROUTES.BOOK_A_LAB_TEST,
     },
   ];
   return (
@@ -23,13 +26,14 @@ const DiagnoseForInfertility = () => {
         titleAlignment="center"
         className={classes.main}
       >
-        {diagnosticsTypes.map(({ title, image }) => {
+        {diagnosticsTypes.map(({ title, image, ctaRoute }) => {
           return (
             <AssessCard
               key={title}
               title={title}
               backgroundImage={image}
               ctaText="Book Test"
+              ctaRoute={ctaRoute}
               className={classes.overCardStyle}
             />
           );
