@@ -33,6 +33,7 @@ const AssessBySymptoms = () => {
             <AssessCard
               key={item.title}
               {...item}
+              ctaText="Assess Me"
               styles={{
                 backgroundColor: item.backgroundColor,
               }}
