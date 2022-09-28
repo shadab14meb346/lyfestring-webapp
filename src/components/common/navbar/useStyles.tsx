@@ -23,6 +23,9 @@ export const useStyles = makeStyles({
   },
   navarItem: {
     marginRight: theme.spacing(4),
+    "&:hover": {
+      fontWeight: 500,
+    },
   },
   signIn: {
     marginLeft: theme.spacing(4),
@@ -35,6 +38,7 @@ export const useStyles = makeStyles({
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
+    textUnderlineOffset: "14px",
   },
   menuIcon: {
     color: theme.palette.primary.main,
@@ -44,6 +48,10 @@ export const useStyles = makeStyles({
     },
   },
   activeNavbarItem: {
-    borderBottom: `1px solid ${theme.palette.primary.main}`,
+    fontWeight: 500,
+  },
+  inActiveNavbarItem: {
+    textDecoration: "none",
+    color: theme.palette.grey1.main,
   },
 });

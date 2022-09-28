@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import HeroSection from "@components/book-test/hero-section";
-import NavBar from "@components/home-page/navbar";
+import NavBar from "@components/common/navbar";
 import HowItWorks from "@components/book-test/how-it-works";
 import Footer from "@components/home-page/footer";
 import HighQualityLabsSection from "@components/book-test/high-quality-labs-section";
