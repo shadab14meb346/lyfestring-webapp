@@ -6,7 +6,7 @@ import NavBar from "@components/common/navbar";
 import AssessBySymptoms from "@components/home-page/assess-section/assess-by-symptoms";
 import DiagnoseForInfertility from "@components/home-page/assess-section/diagnose-for-interfertility";
 import AssessBySTIs from "@components/home-page/assess-section/assess-by-sti";
-import Footer from "@components/home-page/footer";
+import Footer from "@components/common/footer";
 
 const Home: NextPage = () => {
   return (

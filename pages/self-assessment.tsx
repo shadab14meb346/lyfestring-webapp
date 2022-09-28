@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import NavBar from "@components/common/navbar";
-import Footer from "@components/home-page/footer";
+import Footer from "@components/common/footer";
 
 const SelfAssessment: NextPage = () => {
   return (
